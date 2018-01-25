@@ -1,0 +1,9 @@
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\bin\Debug\DataAc.exe.config
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.csprojResolveAssemblyReference.cache
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.Properties.Resources.resources
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.csproj.GenerateResource.Cache
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\bin\Debug\DataAc.exe
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\bin\Debug\DataAc.pdb
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.exe
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.pdb
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.Cadastros.resources
