@@ -7,3 +7,4 @@ C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\bin\Debug
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.exe
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.pdb
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.Cadastros.resources
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.BirthList.resources

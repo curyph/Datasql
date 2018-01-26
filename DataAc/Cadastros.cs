@@ -73,7 +73,7 @@ namespace DataAc
                 myCommand.Parameters.AddWithValue("Lname", txtLName.Text);
                 myCommand.Parameters.AddWithValue("Phone", txtPhone.Text);
                 myCommand.Parameters.AddWithValue("DOB", Convert.ToDateTime(txtDOB.Text));
-                myCommand.ExecuteNonQuery();
+                myCommand.ExecuteNonQuery();                
                 InterfaceOperations.ClearTextBoxes();
             }
             catch (Exception ex)

@@ -41,6 +41,7 @@
             this.lbl3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBirth = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,11 +158,21 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "DOB";
             // 
+            // btnBirth
+            // 
+            this.btnBirth.Location = new System.Drawing.Point(476, 128);
+            this.btnBirth.Name = "btnBirth";
+            this.btnBirth.Size = new System.Drawing.Size(59, 54);
+            this.btnBirth.TabIndex = 13;
+            this.btnBirth.Text = "Birth";
+            this.btnBirth.UseVisualStyleBackColor = true;
+            // 
             // Cadastros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 368);
+            this.Controls.Add(this.btnBirth);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl3);
@@ -198,6 +209,7 @@
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBirth;
     }
 }
 
