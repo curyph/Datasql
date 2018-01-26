@@ -166,6 +166,7 @@
             this.btnBirth.TabIndex = 13;
             this.btnBirth.Text = "Birth";
             this.btnBirth.UseVisualStyleBackColor = true;
+            this.btnBirth.Click += new System.EventHandler(this.btnBirth_Click);
             // 
             // Cadastros
             // 

@@ -120,5 +120,11 @@ namespace DataAc
                 connect.myConnection.Close();
             }
         }
+
+        private void btnBirth_Click(object sender, EventArgs e)
+        {
+            BirthList formb = new BirthList();
+            formb.Show();
+        }
     }
 }
