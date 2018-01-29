@@ -7,28 +7,18 @@ using System.Windows.Forms;
 
 namespace DataAc
 {
-    class InterfaceOperations
+   public static class InterfaceOperations
     {
-        public static void ClearTextBoxes()
+        public static void ClearTextBoxes(Control.ControlCollection cc)
         {
-            Action<Control.ControlCollection> func = null;
-
-            func = (controls) =>
+            foreach (Control ctrl in cc)
             {
-                foreach (Control control in controls)
-                    if (control is TextBox)
-                        (control as TextBox).Clear();
-                    else
-                        func(control.Controls);
-            };
-
-            //func(Controls);
-        }
-
-        public static void limparTela()
-        {
-            MessageBox.Show("123");
-
+                TextBox tb = ctrl as TextBox;
+                if (tb != null)
+                    tb.Text = "";
+                else
+                    ClearTextBoxes(ctrl.Controls);
+            }
         }
     }
 }

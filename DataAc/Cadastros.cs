@@ -27,6 +27,7 @@ namespace DataAc
                 dataAdapter.Fill(ds);
                 dataGridView1.ReadOnly = true;
                 dataGridView1.DataSource = ds.Tables[0];
+                InterfaceOperations.ClearTextBoxes(this.Controls);
             }            
             catch (Exception ex)
             {
@@ -48,10 +49,9 @@ namespace DataAc
                 myCommand.Parameters.AddWithValue("Lname", txtLName.Text);
                 myCommand.Parameters.AddWithValue("Phone", txtPhone.Text);
                 myCommand.Parameters.AddWithValue("DOB", Convert.ToDateTime(txtDOB.Text));
-                myCommand.ExecuteNonQuery();               
-                InterfaceOperations.ClearTextBoxes();
+                myCommand.ExecuteNonQuery();
+                InterfaceOperations.ClearTextBoxes(this.Controls);
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
@@ -73,8 +73,8 @@ namespace DataAc
                 myCommand.Parameters.AddWithValue("Lname", txtLName.Text);
                 myCommand.Parameters.AddWithValue("Phone", txtPhone.Text);
                 myCommand.Parameters.AddWithValue("DOB", Convert.ToDateTime(txtDOB.Text));
-                myCommand.ExecuteNonQuery();                
-                InterfaceOperations.ClearTextBoxes();
+                myCommand.ExecuteNonQuery();
+                InterfaceOperations.ClearTextBoxes(this.Controls);
             }
             catch (Exception ex)
             {
@@ -109,7 +109,7 @@ namespace DataAc
                 myCommand.Parameters.AddWithValue("Phone", txtPhone.Text);
                 myCommand.Parameters.AddWithValue("DOB", Convert.ToDateTime(txtDOB.Text));
                 myCommand.ExecuteNonQuery();
-                InterfaceOperations.ClearTextBoxes();
+                InterfaceOperations.ClearTextBoxes(this.Controls);
             }
             catch (Exception ex)
             {

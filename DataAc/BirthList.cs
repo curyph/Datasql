@@ -21,7 +21,7 @@ namespace DataAc
             try
             {
                 connect.myConnection.Open();
-                SqlCommand myCommand = new SqlCommand("SELECT FName, LName from Pessoas", connect.myConnection);
+                SqlCommand myCommand = new SqlCommand("SELECT ID, FName, LName from Pessoas", connect.myConnection);
 
                 SqlDataReader reader = myCommand.ExecuteReader();
                 DataTable dt = new DataTable();
@@ -54,12 +54,12 @@ namespace DataAc
             try
             {
                 connect.myConnection.Open();
-                SqlCommand myCommand = new SqlCommand("INSERT INTO Dependentes (Dep_Name, Dep_DOB, ID) values (@DepName, @DepDOB, @ID)", connect.myConnection);
+                SqlCommand myCommand = new SqlCommand("INSERT INTO Dependentes (Dep_Name, Dep_DOB, ID) values (@Dep_Name, @Dep_DOB, @ID)", connect.myConnection);
                 myCommand.Parameters.AddWithValue("Dep_Name", txtDepName.Text);
-                myCommand.Parameters.AddWithValue(" Dep_DOB", Convert.ToDateTime(txtDepDOB.Text));
-                myCommand.Parameters.AddWithValue("ID", Convert.ToInt16(comboBox1.ValueMember));                
+                myCommand.Parameters.AddWithValue("Dep_DOB", Convert.ToDateTime(txtDepDOB.Text));
+                myCommand.Parameters.AddWithValue("ID", Convert.ToInt16(comboBox1.SelectedValue));
                 myCommand.ExecuteNonQuery();
-                InterfaceOperations.ClearTextBoxes();
+                InterfaceOperations.ClearTextBoxes(this.Controls);
             }
 
             catch (Exception ex)
@@ -71,5 +71,38 @@ namespace DataAc
                 connect.myConnection.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connect.myConnection.Open();
+                SqlCommand myCommand = new SqlCommand("SELECT * FROM DEPENDENTES");
+                var dataAdapter = new SqlDataAdapter(myCommand.CommandText, connect.myConnection);
+                var ds = new DataSet();
+                dataAdapter.Fill(ds);
+                dataGridView1.ReadOnly = true;
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                connect.myConnection.Close();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand myCommand = new SqlCommand("select r.FName, r.LName, d.Dep_Name from Pessoas as r join Dependentes as d on r.ID = d.ID order by FName");
+            var ds = new DataSet();
+            var dataAdapter = new SqlDataAdapter(myCommand.CommandText, connect.myConnection);           
+            dataAdapter.Fill(ds);
+            dataGridView1.ReadOnly = true;
+            dataGridView1.DataSource = ds.Tables[0];
+        }
+               
     }
 }
