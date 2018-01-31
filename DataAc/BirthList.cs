@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -96,12 +92,20 @@ namespace DataAc
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             SqlCommand myCommand = new SqlCommand("select r.FName, r.LName, d.Dep_Name from Pessoas as r join Dependentes as d on r.ID = d.ID order by FName");
             var ds = new DataSet();
             var dataAdapter = new SqlDataAdapter(myCommand.CommandText, connect.myConnection);           
             dataAdapter.Fill(ds);
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Courses cadCurso = new Courses();
+            cadCurso.Show();
         }
                
     }

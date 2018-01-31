@@ -39,6 +39,7 @@
             this.btnDepSelect = new System.Windows.Forms.Button();
             this.btnDelDep = new System.Windows.Forms.Button();
             this.btnSelDep = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,11 +140,22 @@
             this.btnSelDep.UseVisualStyleBackColor = true;
             this.btnSelDep.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(475, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(83, 45);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Cursos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // BirthList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 368);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSelDep);
             this.Controls.Add(this.btnDelDep);
             this.Controls.Add(this.btnDepSelect);
@@ -176,5 +188,6 @@
         private System.Windows.Forms.Button btnDepSelect;
         private System.Windows.Forms.Button btnDelDep;
         private System.Windows.Forms.Button btnSelDep;
+        private System.Windows.Forms.Button button1;
     }
 }

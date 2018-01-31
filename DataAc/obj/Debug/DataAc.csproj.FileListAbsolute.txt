@@ -8,3 +8,5 @@ C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.pdb
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.Cadastros.resources
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.BirthList.resources
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.CadastroCurso.resources
+C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.Courses.resources
