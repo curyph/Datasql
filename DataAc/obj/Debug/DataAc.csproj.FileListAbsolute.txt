@@ -10,3 +10,15 @@ C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.BirthList.resources
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.CadastroCurso.resources
 C:\Users\Pedro-FGA\Documents\Visual Studio 2013\Projects\DataAc\DataAc\obj\Debug\DataAc.Courses.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\bin\Debug\DataAc.exe.config
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.exe
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.pdb
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.BirthList.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.CadastroCurso.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.Cadastros.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.Courses.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.Properties.Resources.resources
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\obj\Debug\DataAc.csproj.GenerateResource.Cache
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\bin\Debug\DataAc.exe
+C:\Users\Pedro\Documents\Visual Studio 2013\Projects\Datasql\DataAc\bin\Debug\DataAc.pdb

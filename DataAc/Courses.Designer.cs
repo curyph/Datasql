@@ -64,7 +64,7 @@
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 39);
             this.btnListar.TabIndex = 2;
-            this.btnListar.Text = "Listar Cadastros";
+            this.btnListar.Text = "Listar Cadastross";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
