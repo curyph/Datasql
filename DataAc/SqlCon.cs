@@ -8,8 +8,8 @@ namespace DataAc
     public class SqlCon
     {
         public SqlConnection myConnection = new SqlConnection("user id=sa;" +
-                                       "password=l4p1s;server=PEDRO-PC\\SQLFGA;" +
-                                       "Trusted_Connection=yes;" +
+                                       "password=l4p1s;server=LNV\\SQLFGA;" +
+                                       "Trusted_Connection=no;" +
                                        "database=DBC; " +
                                        "connection timeout=15");
 

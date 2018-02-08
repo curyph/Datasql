@@ -16,8 +16,7 @@ namespace DataAc
         SqlCon connect = new SqlCon();
         SqlCommand myCommand;
         SqlDataReader reader;
-        DataTable dt;
-        public int ID;
+        DataTable dt;       
         public Courses()
         {
             InitializeComponent();
@@ -47,15 +46,27 @@ namespace DataAc
                 cbNomeCurso.DisplayMember = "NAME_COURSE";
                 cbNomeCurso.DataSource = dt;
 
-                myCommand = new SqlCommand("SELECT ID FROM DEPENDENTES ", connect.myConnection);
+                myCommand = new SqlCommand("SELECT distinct d.ID, p.FName "
+                                          + "FROM Dependentes AS d "
+                                          + "JOIN Pessoas AS p on d.ID = p.ID "
+                                            , connect.myConnection);
                 reader = myCommand.ExecuteReader();
                 dt = new DataTable();
                 dt.Columns.Add("ID", typeof(string));
                 dt.Load(reader);
 
-                cbID.ValueMember = "ID";
-                cbID.DisplayMember = "FName";
-                cbID.DataSource = dt;
+
+                //int idteste = 0;
+
+                //connect.myConnection.Open();
+                //myCommand = new SqlCommand("SELECT IDDEP FROM DEPENDENTES WHERE PARAMETRO = " + , connect.myConnection);
+                //idteste = myCommand.ExecuteScalar();
+                
+                //SELECT D.FName[RESPONSÁVEL], C.Dep_Name[DEPENDENTE], B.NAME_COURSE[CURSO],B.COST_COURSE[CUSTO],B.PERIOD_COURSE[PERIODO] 
+                //FROM MATRICULA A 
+                //INNER JOIN COURSES B ON A.ID_COURSE = B.ID_COURSE
+                //INNER JOIN Dependentes C ON A.IDdep = C.IDdep
+                //INNER JOIN Pessoas D ON C.ID = D.ID
 
 
             }
@@ -80,10 +91,9 @@ namespace DataAc
             try
             {
                 connect.myConnection.Open();
-                SqlCommand myCommand = new SqlCommand("INSERT INTO MATRICULA (IDDEP, ID_COURSE, ID) VALUES(@IDDEP, @ID_COURSE, @ID)", connect.myConnection);
+                SqlCommand myCommand = new SqlCommand("INSERT INTO MATRICULA (IDDEP, ID_COURSE) VALUES(@IDDEP, @ID_COURSE)", connect.myConnection);              
                 myCommand.Parameters.AddWithValue("IDDEP", cbNomeAluno.SelectedValue);
                 myCommand.Parameters.AddWithValue("ID_COURSE", cbNomeCurso.SelectedValue);
-                myCommand.Parameters.AddWithValue("ID", ID);
                 myCommand.ExecuteNonQuery();
                 MessageBox.Show("Matrícula efetuada com sucesso");
             }
@@ -103,10 +113,11 @@ namespace DataAc
             try
             {
                 connect.myConnection.Open();
-                myCommand = new SqlCommand("SELECT m.ID, p.FName, c.NAME_COURSE, c.COST_COURSE "
-                                           + "from MATRICULA as m "
-                                           + "join courses as c on c.ID_course = m.ID_COURSE "
-                                           + "join pessoas as p on m.id = p.id");
+                myCommand = new SqlCommand("select d.ID, p.Fname, j.name_course, j.cost_course " 
+                                           + "from Dependentes as d "
+                                           + "join Pessoas as p on p.ID = d.ID "
+                                           + "join MATRICULA as c on d.IDdep = c.IDdep "
+                                           + "JOIN COURSES as j on j.ID_COURSE = c.ID_COURSE ");
                 var dataAdapter = new SqlDataAdapter(myCommand.CommandText, connect.myConnection);
                 var ds = new DataSet();
                 dataAdapter.Fill(ds);

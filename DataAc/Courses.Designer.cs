@@ -36,7 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbNomeAluno = new System.Windows.Forms.ComboBox();
             this.cbNomeCurso = new System.Windows.Forms.ComboBox();
-            this.cbID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgMatricula)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +63,7 @@
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 39);
             this.btnListar.TabIndex = 2;
-            this.btnListar.Text = "Listar Cadastross";
+            this.btnListar.Text = "Listar Cadastros";
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
@@ -112,20 +111,11 @@
             this.cbNomeCurso.Size = new System.Drawing.Size(155, 21);
             this.cbNomeCurso.TabIndex = 14;
             // 
-            // cbID
-            // 
-            this.cbID.FormattingEnabled = true;
-            this.cbID.Location = new System.Drawing.Point(486, 293);
-            this.cbID.Name = "cbID";
-            this.cbID.Size = new System.Drawing.Size(61, 21);
-            this.cbID.TabIndex = 15;
-            // 
             // Courses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(559, 326);
-            this.Controls.Add(this.cbID);
             this.Controls.Add(this.cbNomeCurso);
             this.Controls.Add(this.cbNomeAluno);
             this.Controls.Add(this.label3);
@@ -152,6 +142,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbNomeAluno;
         private System.Windows.Forms.ComboBox cbNomeCurso;
-        private System.Windows.Forms.ComboBox cbID;
     }
 }
